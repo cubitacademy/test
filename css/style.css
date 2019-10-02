@@ -1,0 +1,111 @@
+
+
+.container-fluid{
+background-color:rgb(200,200,200);
+margin:0;
+padding:4px;
+}
+.tense{
+  background-color:rgb(210,210,210);
+}
+
+
+.card{
+  margin-bottom: 16px;
+}
+h1{
+  text-align: center;
+  color: white;
+  padding: 50px;
+}
+
+.navbar{
+  background-color: #34495e;
+}
+.quizsection{
+  margin-top:80px;
+  border:2px solid #700961;
+}
+.quizsection>h1{
+  margin:0;
+  padding:8px;
+  background-color: #700961;
+  margin-bottom:5px;
+
+}
+
+.referencesection{
+
+  border:2px solid #b80d57;
+  background-color:rgb(200,200,200);
+}
+.referencesection>h1{
+  margin:0;
+  padding:8px;
+  background-color: #b80d57;
+  margin-bottom:5px;
+
+}
+.tensesection{
+
+  border:2px solid #e03e36;
+}
+.tensesection>h1{
+  margin:0;
+  padding:8px;
+  background-color: #e03e36;
+  margin-bottom:5px;
+}
+
+
+/* sub heading of tenses */
+.whichtense{
+  margin:10px;
+  text-align:left;
+  color: black;
+  padding:0;
+}
+h2{
+  text-align:center;
+}
+
+
+.card{
+
+min-height:230px;
+}
+
+#base{
+    color:red;
+    font-size:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+.logo{
+width:20%;
+}
+
+.container-fluid{
+background-color:rgb(240,240,240);
+padding:0;
+}
+
+.card{
+
+min-height:180px;
+}
+
+.mobile{
+  display:none;
+}
+}

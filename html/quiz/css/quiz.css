@@ -1,0 +1,84 @@
+body {
+
+}
+.sco{
+    float:left;
+    display:inline-block;
+}
+.score{
+    margin:0;
+    margin-top:5px;
+    margin-right:5px;
+}
+.card-body{
+    border:1px solid black;
+    padding:0;
+}
+.card-header{
+    background-color:#4056A1;
+    color:rgb(230,230,230);
+}
+.restart{
+    margin:14px;
+}
+h5{
+    line-height:3;
+    letter-spacing:2px;
+    font-weight:400;
+}
+.navbar{
+    background-color:#4056A1;
+}
+.quesno{
+     position:relative;
+    float:left;
+}
+h1{
+    font-size:1.2rem;
+    margin:0;
+    margin-top:4px;
+    text-align:center;
+    color:rgb(190,190,190);
+
+}
+.card-title{
+    margin:0;
+}
+.timer{
+    float:right;
+    border-radius:50%;
+}
+
+
+
+#result{
+    margin:8px;
+    display:none;
+    background-color:white;
+    padding:8px;
+    min-height:90%;
+}
+#fivestar,#fourstar,#threestar,#twostar,#onestar{
+    display:none;
+    font-size:2rem;
+}
+
+h4{
+    font-weight:400;
+    line-height:1.5;
+    letter-spacing:2px;
+    font-size:1.2rem;
+}
+
+#quizsection{
+    display:none;
+}
+#alert{
+    display:none;
+}
+.sub{
+    font-weight:200;
+}
+.card-footer{
+  border:1px dashedblack;
+}

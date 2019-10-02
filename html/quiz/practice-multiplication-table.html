@@ -1,0 +1,258 @@
+<!doctype html>
+<html ng-app lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <!-- Global site tag (gtag.js) - Google Analytics <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147749876-1"></script><script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-147749876-1');</script>
+  -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Cubit</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+</head> <!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+
+
+
+
+<link rel="stylesheet" href="css/quiz.css">
+
+
+
+
+
+
+<body>
+  <nav class="navbar navbar-expand-md  navbar-dark bg-dark">
+    <!-- Brand -->
+    <img src="http://www.cubitacademy.com/sites/default/files/cubit-logo.jpg" width="7%" class="img-thumbnail logo" />
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reference</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tense</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">Contact / Feedback</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+
+
+
+<div class ="container">
+
+
+
+<br />
+
+<div id="selectsection">
+    <form>
+   <div class="form-group">
+  <label for="whichnumber">Which Number :</label> <input type="number" class="form-control" id="whichnumber" aria-describedby="emailHelp" placeholder="Enter number" value=12><small id="emailHelp" class="form-text text-muted">Enter the number which you want to take quiz</small> </div>
+
+
+    <div class="form-group"> <label for="upto">Upto: </label> <input type="number" class="form-control" id="upto" aria-describedby="emailHelp" value=25
+ ng-model="upto" ng-init="upto=25"    placeholder="Enter number"> <small id="emailHelp" class="form-text text-muted">The question will ask upto this number </small> </div>
+
+
+
+
+    <div class="form-group"> <label for="start">Start from: </label>
+    <input type="number" value=0 ng-model="startfrom" ng-init="startfrom=0" class="form-control" id="start" aria-describedby="emailHelp" placeholder="Enter number"  required  > <small id="emailHelp" class="form-text text-muted">Question is between {{startfrom}} and {{upto}}, there are ten questions so maximum start value should be upto {{upto-10}}</small> </div>
+
+
+    <div id="alert" class="alert alert-danger" role="alert"> Start from value must less than or equal to {{upto-10}} </div>
+
+
+
+<button class="btn btn-success"onclick="go()"> Go</button>
+
+
+
+    </form>
+
+
+
+    <br />
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div id="quizsection">
+
+
+<h1>Practice multiplication table</h1>
+
+<div class="card text-center">
+  <div class="card-header bg-info mb-3">
+  <label class="score sco">Sco: </label><button class="btn btn-warning sco " id="sco">0</button>
+
+ <button id="countdowntimer" class="btn btn-lg btn-secondary timer"><span style="font-size:.8rem">0</span></button>
+
+  </div>
+
+
+  <div class="card-body border-dark mb-3">
+
+
+<div class="container">
+
+<p class="quesno"><b style="font-size:1.5rem;">Q </b><span id="quesno">1</span><span id="tno">/10</span></p>
+    <br />
+
+    <h5 class="card-title" id="quo">loading...</h5>
+<br />
+
+
+</div>
+
+
+  </div>
+
+
+  <div class="card-footer" >
+    <p>Ans : <input type="number" id="ans" onkeyup="ansfunction()" class="card-input">
+   <span id="correctans"></span>
+</p>
+<br />
+  </div>
+</div>
+<center>
+<button class="btn btn-outline-dark restart" onClick="location.href=location.href">Restart</button>
+
+</center>
+
+
+
+
+
+
+</div>
+
+
+
+<div id="result">
+     <div class="container result">
+         <h2>Result</h2>
+         <p id="finalscore"></p>
+         <p id="avgtime"></p>
+         <p id="comment"></p>
+
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.checked {
+  color: orange;
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.checked {
+  color: orange;
+}
+</style>
+
+<div id="fivestar">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+</div>
+
+
+<div id="fourstar">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+</div>
+
+
+<div id="threestar">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</div>
+
+<div id="twostar">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</div>
+
+<div id="onestar">
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</div>
+
+
+<br />
+
+<h2 id="cd">Correct answers</h2>
+<div id="wronq">
+
+</div>
+
+<input type="button" class="lastb btn btn-success"value="Restart" onClick="location.href=location.href">
+     </div>
+      </div>
+
+
+
+
+</div>
+
+<script src="js/practicetable.js" charset="utf-8"></script>
+</body>
+</html>
