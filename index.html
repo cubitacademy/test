@@ -1,85 +1,250 @@
-<!doctype html>
-<html ng-app lang="en">
 
-<head>
-  <!-- Required meta tags -->
-  <!-- Global site tag (gtag.js) - Google Analytics <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147749876-1"></script><script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-147749876-1');</script>
-  -->
+        <!doctype html> 
+<html lang="en"> 
+<head> <!-- Required meta tags --> 
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+ <!-- Bootstrap CSS --> 
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+ <title>Hello, world!</title>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+ 
+  </head> <!-- Optional JavaScript --> <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+ 
+ 
+ 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> 
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+ </script> 
+ 
+ <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+ 
+ 
+ <style>
+     html {
+  scroll-behavior: smooth;
+}
 
-  <meta charset="utf-8">
-  <meta name="description" content="Bank exam helper">
-  <meta name="keywords" content="Multiplication Tables,Reasoning,Square,Direction,letter Count,Reverse Pair,a list of multiplication tables,a multiplication table game">
-  <meta name="author" content="Athul jacob cubitacademy,Direction">
+body {
+    margin:0;
+    overflow-x:hidden;
+    
+}
+
+body {
+    font-family: 'Handlee', cursive;
+    font-size: 13pt;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0;
+}
 
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-<link rel="icon" type="image/png" sizes="16x16" href="images/android-chrome-192x192.png">
-  <title>Cubit | speed up your calculations</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-
-
-
-
-</head> <!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-</script>
-
-<link rel="stylesheet" href="css/style.css">
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-
+.container-fluid{
+    
+}
+.header{
+    background-color:#8A0651;
+    min-height:480px;
+}
+#head{
+    color:white;
+    margin-top:60px;
+    padding-top:40px;
+    text-align:center;
+}
+.head{
+    color:white;
+    padding-top:10px;
+    text-align:center;
+    font-size:3.2rem;
+    font-family: 'ZCOOL XiaoWei', serif;
+    position:relative;
+    animation: mymove 2s 1;
+    
+    
+}
 
 
+
+
+.sub {
+    display:block;
+}
+.navbar{
+    background-color:#8A0651;
+    background-color:#58355E;
+    padding:0;
+    padding-left:8px;
+    padding-right:8px;
+}
+.navtext{
+    color:white;
+    font-size:1.1rem;
+}
+
+.navbar-toggler{
+   background-color:#DEF2F1;
+}
+
+
+.about{
+    margin-top:70px;
+    color:black;
+    background-color:white;
+    padding:16px;
+}
+.about p{
+    font-family: 'Roboto', sans-serif;
+    font-size:1.2rem;
+}
+h3{
+    padding:20px;
+    text-align:center;
+    
+    
+}
+h3 span{
+    border: 4px dashed #20bcd5;
+    padding:13px;
+    color:#5e412f;
+    font-size:2rem;
+    font-weight:800px;
+}
+
+
+
+.photos{
+    background-color:#5e412f;
+    padding:6px;
+    
+}
+.cent{
+    margin-left:40%;
+}
+
+
+
+
+
+.package{
+    margin-top:86px;
+    padding:2%;
+    background-color:#FCFCFC;
+}
+.ath{
+    padding:4%;
+}
+
+
+.tick{
+    float:right;
+    color:green;
+    font-size:1.5rem;
+}
+.premium{
+    background-color:#fcebb6;
+    color:green;
+}
+.classic{
+    background-color:#41b6e6;
+    color:white;
+}
+
+.hide{
+    visibility:hidden;
+}
+.img1{
+   position:relative ;
+   animation: img1 2s 1;
+   visibility:visible ;
+   
+}
+.img2{
+    position:relative ;
+    animation: img2 2s 1;
+    visibility:visible ;
+}
+.img3{
+    visibility:visible ;
+    position:relative ;
+    animation: img3 2s 1;
+}
+
+
+@keyframes mymove {
+  from {left: -1000px;}
+  to {left: 0px;}
+}
+
+@keyframes img1 {
+  from {left: -100px;}
+  to {left: 0px;}
+}
+@keyframes img2 {
+  from {left: 100px;}
+  to {left: 0px;}
+}
+@keyframes img3 {
+  from {top: 500px;}
+  to {top: 0px;}
+}
+
+
+ </style>
+ 
+ 
+ <script>
+     
+
+
+$(document).ready(function(){ var scroll_pos = 0; $(document).scroll(function() { scroll_pos = $(this).scrollTop(); if(scroll_pos > 480) { 
+$(".navbar").css('background-color', '#58355E'); 
+$("#head").removeClass("head");
+
+} else if(scroll_pos < 480) { $(".navbar").css('background-color', '#58355E'); 
+$("#head").addClass("head");
+$("#img1").removeClass("img1");
+$("#img2").removeClass("img2");
+$("#img3").removeClass("img3");
+
+
+}
+if(scroll_pos > 700 &&  scroll_pos < 1350) { $(".navbar").css('background-color', '#5e412f'); 
+$("#img1").addClass("img1");
+$("#img2").addClass("img2");
+$("#img3").addClass("img3");
+}else if(scroll_pos > 700){
+ $(".navbar").css('background-color', '#555');  
+ $("#img1").removeClass("img1");
+$("#img2").removeClass("img2");
+$("#img3").removeClass("img3");
+}
+
+
+}); //scroll
+});
+
+
+ </script>
+ 
 <body>
 
-  <nav class="navbar fixed-top  navbar-expand-md navbar-dark">
-    <!-- Brand -->
-    <img src="http://www.cubitacademy.com/sites/default/files/cubit-logo.jpg" width="7%" class="img-thumbnail logo" />
-
-    <!-- Toggler/collapsibe Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#quiz">Quiz</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#reference">Reference</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#tenses">Tenses</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">contact / Feedback</a>
-        </li>
-      </ul>
-    </div>
-    </nav>
 
 
 
 
 
-  <div class=" container-fluid" id="select">
-    <br>
+<div class="header">
+
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top"> <a class="navbar-brand" href="#">
+   <img src="https://scontent.fcok1-1.fna.fbcdn.net/v/t31.0-8/fr/cp0/e15/q65/22291149_1969990863289879_4030183682108792221_o.jpg?_nc_cat=109&efg=eyJpIjoidCJ9&_nc_oc=AQma_f6M_yvzqQwyTwZSmHVyAXWbXrj7LxETM1kfYt8_hvOCLv4SysrS7FKfbkxaKmA&_nc_ht=scontent.fcok1-1.fna&oh=f3450836c5767a7367daa36c8a809597&oe=5E2CA597" alt="logo" class="img-responsive" width="40px"> 
+</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarNav"> <ul class="navbar-nav"> <li class="nav-item active"> <a class="nav-link " href="#"><p class="navtext">Home</p><span class="sr-only">(current)</span></a> </li> <li class="nav-item"> <a class="nav-link" href="#"><p class="navtext">Gallery</p></a> </li> <li class="nav-item"> <a class="nav-link" hrer="#"><p class="navtext">Pricing</p> </li> <li class="nav-item"> <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><p class="navtext">Contact US</p>></a> </li> </ul> </div> </nav>
 
 
 
@@ -88,130 +253,19 @@
 
 
 
-<div id="quiz" class="quizsection">
 
-<h1 style="text-align:center">Quiz Section</h1>
-    <div class="row">
-      <div class="col-sm-4 col-6">
-        <div class="card ">
-          <div class="card-body">
-            <h5 class="card-title">Free Practice Multiplication -Table</h5>
-            <ul class='mobile'>
-              <li>Builds Confidence in Mathematics..</li>
-              <li>Skill for Long Multiplication and Division...</li>
-              <li>Improve Problem-Solving Abilities</li>
-              <li>best way to practice multiplication tables</li>
+    <h2 id="head" class="head">Cadbery Media<span class="sub">House</span> </h2>
+    
 
-            </ul>
-            <a href="/multiplication.html" class="btn btn-primary">Practice Table</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Square of Numbers</h5>
 
-            <ul class='mobile'>
-              <li>Builds Confidence in Mathematics..</li>
-              <li>Improve Problem-Solving Abilities</li>
-            <li>best way to practice square of numbers </li>
-            </ul>
-            <a href='/square.html' class="btn btn-primary">Pratice</a>
-          </div>
-        </div>
-      </div>
-      <!-- direction game -->
-      <div class="col-sm-4 col-6">
-        <div class="card ">
-          <div class="card-body">
-            <h5 class="card-title">Direction Game</h5>
 
-            <ul class='mobile'>
-              <li>Increase the speed of finding diection</li>
-              <li>Draw through the canvas and find direction</li>
-              <li>best way to practice Direction questions</li>
-            </ul>
-            <a href= '/direction.html' class="btn btn-danger">Start</a>
-          </div>
-        </div>
-      </div>
-<!-- letter quiz -->
-<div class="col-sm-4 col-6">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Find the letter number</h5>
 
-      <ul class='mobile'>
-        <li>To study about English alphabets</li>
-        <li>Helpful in reasoning</li>
-            <li>best way to study english alphabets count</li>
-        <li>A=1 and z=26</li>
-      </ul>
-      <a href= '/letterquiz.html' class="btn btn-success">Take Quiz</a>
-    </div>
-  </div>
-</div>
-<!-- reverse pair -->
-<div class="col-sm-4 col-6">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Find the reverse pair of letter</h5>
 
-      <ul class='mobile'>
-        <li>To study about English alphabets</li>
-        <li>Helpful in reasoning</li>
-      <li>best way to practice reverse pair</li>
-        <li>a=z</li>
-      </ul>
-      <a href= '/reversepair.html' class="btn btn-success">Take Quiz</a>
-    </div>
-  </div>
-</div>
-<!-- cube of numbers -->
-<div class="col-sm-4 col-6">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Find the cube of numbers</h5>
 
-      <ul class='mobile'>
-        <li>Builds Confidence in Mathematics..</li>
-        <li>Improve Problem-Solving Abilities</li>
-      <li>best way to practice cube of numbers </li>
-      </ul>
-      <a href= '/reversepair.html' class="btn btn-primary">Practice</a>
-    </div>
-  </div>
-</div>
 
-<!-- lcm of numbers -->
-<div class="col-sm-4 col-6">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Find the Lcm</h5>
 
-      <ul class='mobile'>
-        <li>Improve simplification</li>
-        <li>Improve fraction-Solving </li>
-      <li>best way to practice Lcm of numbers </li>
-      </ul>
-      <a href= '/reversepair.html' class="btn btn-primary">Practice</a>
-    </div>
-  </div>
-</div>
 
-<!-- average of numbers -->
-<div class="col-sm-4 col-6">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Find approximate Average of three numbers</h5>
-
-      <ul class='mobile'>
-      <li>best way to practice Average of numbers </li>
-      </ul>
-      <a href= '/reversepair.html' class="btn btn-primary">Practice</a>
-    </div>
-  </div>
+ <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000"> <div class="carousel-inner"> <div class="carousel-item active"> <img class="d-block w-100 img-b" src="https://scontent.fcok1-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/51319407_2267249880230641_9160154653743120384_o.jpg?_nc_cat=108&efg=eyJpIjoidCJ9&_nc_oc=AQnIuDWm0IlOL5BzTYcmOffmSsvldQs5N5daNQZdMTDRjLbD4Yp4RQvAEpEPOyhNKWY&_nc_ht=scontent.fcok1-1.fna&oh=09229f6cb82281114740f0f9207d4a95&oe=5E21B4E7" alt="First slide"> </div> <div class="carousel-item"> <img class="d-block w-100" src="https://scontent.fcok1-1.fna.fbcdn.net/v/t31.0-8/fr/cp0/e15/q65/26170635_2005985456357086_5345948428906293243_o.jpg?_nc_cat=103&efg=eyJpIjoidCJ9&_nc_oc=AQk9byBjWb2KE2ni4LS7FYsw93vtFCMwlYIDlJrFpK8ULWNT4TlG_g7_b3H3_dioyB8&_nc_ht=scontent.fcok1-1.fna&oh=f50492f286a21e688991f41202c7bef4&oe=5E2013BB" alt="Second slide"> </div> <div class="carousel-item"> <img class="d-block w-100" src="https://scontent.fcok1-1.fna.fbcdn.net/v/t31.0-8/fr/cp0/e15/q65/22256827_1970427456579553_1061750054655539236_o.jpg?_nc_cat=110&efg=eyJpIjoidCJ9&_nc_oc=AQmOPzr9w2bEnKnDAzDbn4vVkV7evHmfD3q5BlItDuMIrfRVf77teS4cDJf8IrhHHps&_nc_ht=scontent.fcok1-1.fna&oh=bf35c2e2e04cd3d41c72f506d0224147&oe=5E630814" alt="Third slide"> </div> </div> <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>   
 </div>
 
 
@@ -220,734 +274,89 @@
 
 
 
-<!-- closing of card -->
-</div>
+<div class="about">
+    <h3><span>About</span></h3>
+    <br />
+    <p>What is Lorem Ipsum?
 
-<!-- closing of quizsecton -->
-</div>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also .
 
-
-
-
-
-<!-- reference -->
-<div id="reference" class="referencesection">
-
-
-
-<h1 style="text-align:center">Reference</h1>
-<div class="row">
-
-
-<!-- multiplication table -->
-  <div class="col-sm-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Multiplication table</h5>
-
-
-
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Number:</th>
-              <th></th>
-              <th scope="col">    <input type="number" value=0 ng-model="startfrom" ng-init="startfrom=8" class="form-control" placeholder="Enter number"  >
-</th>
-
-            </tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">{{startfrom}}*1= {{startfrom*1}}</th></tr>
-            <tr><th scope="row">{{startfrom}}*2= {{startfrom*2}}</th></tr>
-            <tr><th scope="row">{{startfrom}}*3= {{startfrom*3}}</th></tr>
-            <tr><th scope="row">{{startfrom}}*4= {{startfrom*4}}</th></tr>
-            <tr><th scope="row">{{startfrom}}*5= {{startfrom*5}}</th></tr>
-            <tr><th scope="row">{{startfrom}}*6= {{startfrom*6}}</th></tr>
-            <tr><th scope="row">{{startfrom}}*7= {{startfrom*7}}</th></tr>
-            <tr><th scope="row">{{startfrom}}*8= {{startfrom*8}}</th></tr>
-            <tr><th scope="row">{{startfrom}}*9= {{startfrom*9}}</th></tr>
-            <tr><th scope="row">{{startfrom}}*10= {{startfrom*10}}</th></tr>
-            <tr><th scope="row">{{startfrom}}*11= {{startfrom*11}}</th></tr>
-            <tr><th scope="row">{{startfrom}}*12= {{startfrom*12}}</th></tr>
-            <tr><th scope="row">{{startfrom}}*13= {{startfrom*13}}</th></tr>
-            <tr><th scope="row">{{startfrom}}*14= {{startfrom*14}}</th></tr>
-            <tr><th scope="row">{{startfrom}}*15= {{startfrom*15}}</th></tr>
-
-          </tbody>
-        </table>
-        <a href= 'html/refrence/studyletter.html' class="btn btn-block btn-primary">Read more</a>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-  <!-- square-->
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Square</h5>
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col"></th>
-                <th></th>
-                <th scope="col">     </th>
-          </tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">1 square = {{1*1}}</th></tr>
-              <tr><th scope="row">2 square = {{2*2}}</th></tr>
-              <tr><th scope="row">3 square = {{3*3}}</th></tr>
-              <tr><th scope="row">4 square = {{4*4}}</th></tr>
-              <tr><th scope="row">5 square = {{5*5}}</th></tr>
-              <tr><th scope="row">6 square = {{6*6}}</th></tr>
-              <tr><th scope="row">7 square = {{7*7}}</th></tr>
-              <tr><th scope="row">8 square = {{8*8}}</th></tr>
-              <tr><th scope="row">9 square = {{9*9}}</th></tr>
-              <tr><th scope="row">10 square= {{10*10}}</th></tr>
-              <tr><th scope="row">11 square= {{11*11}}</th></tr>
-              <tr><th scope="row">12 square= {{12*12}}</th></tr>
-              <tr><th scope="row">13 square= {{13*13}}</th></tr>
-              <tr><th scope="row">14 square= {{14*14}}</th></tr>
-              <tr><th scope="row">15 square= {{15*15}}</th></tr>
-
-            </tbody>
-          </table>
-          <a href= 'html/refrence/studyletter.html' class="btn btn-block btn-primary">Read more</a>
-        </div>
-      </div>
-    </div>
-
-
-
-
-      <!-- cube-->
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Cube</h5>
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col"></th>
-                    <th></th>
-                    <th scope="col">     </th>
-              </tr>
-                </thead>
-                <tbody>
-                  <tr><th scope="row">1 cube = {{1*1}}</th></tr>
-                  <tr><th scope="row">2 cube = {{2*2*2}}</th></tr>
-                  <tr><th scope="row">3 cube = {{3*3*3}}</th></tr>
-                  <tr><th scope="row">4 cube = {{4*4*4}}</th></tr>
-                  <tr><th scope="row">5 cube = {{5*5*5}}</th></tr>
-                  <tr><th scope="row">6 cube = {{6*6*6}}</th></tr>
-                  <tr><th scope="row">7 cube = {{7*7*7}}</th></tr>
-                  <tr><th scope="row">8 cube = {{8*8*8}}</th></tr>
-                  <tr><th scope="row">9 cube = {{9*9*9}}</th></tr>
-                  <tr><th scope="row">10 cube = {{10*10*10}}</th></tr>
-                  <tr><th scope="row">11 cube = {{11*11*11}}</th></tr>
-                  <tr><th scope="row">12 cube = {{12*12*12}}</th></tr>
-                  <tr><th scope="row">13 cube = {{13*13*13}}</th></tr>
-                  <tr><th scope="row">14 cube = {{14*14*14}}</th></tr>
-                  <tr><th scope="row">15 cube = {{15*15*15}}</th></tr>
-
-                </tbody>
-              </table>
-              <a href= 'html/refrence/studyletter.html' class="btn btn-block btn-primary">Read more</a>
-            </div>
-          </div>
-        </div>
-
-
-
-  <!-- letter number -->
-<div class="col-sm-4">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Letter Count</h5>
-
-      <ul>
-        <li>a  -  1</li>
-        <li>b  -  2</li>
-        <li>c  -  3</li>
-        <li>d  -  4</li>
-        <li>e  -  5</li>
-        <li>f  -  6</li>
-        <li>g  -  7</li>
-        <li>h  -  8</li>
-
-
-      </ul>
-      <a href= 'html/refrence/studyletter.html' class="btn btn-block btn-primary">Read more</a>
-    </div>
-  </div>
-</div>
-
-<!-- reverse pair -->
-<div class="col-sm-4">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Reverse pair</h5>
-
-      <ul>
-        <li>a  -  z</li>
-        <li>b  -  y</li>
-        <li>c  -  x</li>
-        <li>d  -  w</li>
-        <li>e  -  v</li>
-        <li>f  -  u</li>
-        <li>g  -  t</li>
-        <li>h  -  s</li>
-
-
-      </ul>
-        <a href= 'html/refrence/studyletter.html' class="btn btn-block btn-primary">Read more</a>
-    </div>
-  </div>
-</div>
-
-    </div>
-
-
-
-  </div>
-
-
-<!-- section tenses -->
-<div class="tensesection" id='tenses'>
-
-    <h1>Tenses</h1>
-
-<!-- simple present -->
-<div class="card mb-3" >
-  <div class="row no-gutters">
-
-
-
-
-          <div class="sidebar col-md-2 text-white bg-secondary mb-3">
-            <div class="card-body ">
-              <h3 class="card-title">Tenses</h3>
-              <h4>Present</h4>
-             <p>Simple Present</p>
-              <p>Present Continoust</p>
-              <p>Present Perfect</p>
-              <p>Present Perfect Continous</p>
-
-
-            </div>
-          </div>
-
-
-
-
-
-
-
-
-    <div class="post col-md-8   mb-3">
-      <h1 class="whichtense">Present Tense</h1>
-      <div class="container">
-
-                <h2>simple Present</h2>
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <td>I , We , You , They</td>
-                      <th>Base form</th>
-
-                    </tr>
-
-                  <tbody>
-                    <tr>
-                      <td>He , She , It</td>
-                      <th>S form</th>
-                      </thead>
-                    </tr>
-                  </tbody>
-                </table>
-
-
-                <h5>Uses</h5>
-                <ul>
-                  <li> If a sentence starts with here/there</li>
-                  <div id="example" >Here,we write grammar</div>
-                  <li>To denote a Habitual Action</li>
-                  <div id="example" >I attend Classes thrice a week</div>
-                  <li>To denote Universal truth</li>
-                  <div id="example" class="hide">The sun rises in the east</div>
-                  <li> To denote general fact</li>
-                  <div id="example" >Cow eat grass</div>
-                  <li> To denote possession,belongings and ownerships</li>
-                  <div id="example" >She belongs to me</div>
-                </ul>
-
-
-              <a href="/multiplication.html" class="btn btn-dark">Read More ...</a>
-                </div>
-
-
-
-
-
-                <!-- presnt perfect -->
-                <br><br>
-                     <h2 >Present Continous</h2>
-                            <div class="col-sm-12">
-                              <div class="card">
-                                <div class="card-body">
-
-
-
-                      <div id="presentcontinuous">
-                      <div class="container table-responsive">
-
-                      <div class="well well-lg" id="space"><h4 onclick="simplepresent()">Present continuous</h4>
-                          <div class="form">Subject &nbsp+ &nbsp     is/am/are &nbsp +  &nbsp  verb+ing</div><br />
-
-
-                          <table class="table table-bordered">
-                        <thead>
-                          <tr>
-                            <td>I </td>
-                            <th>am</th>
-
-                          </tr>
-
-                        <tbody>
-                          <tr>
-                            <td>He , She , It</td>
-                            <th>is</th>
-
-                            </thead>
-                          </tr>
-                          <tr>
-                            <td> We , You , They</td>
-                            <th>are</th>
-                        </tbody>
-                        </table>
-
-
-
-
-
-
-
-
-                          <h5>Uses</h5>
-                          <ul>
-                          <li> To denote an action that started in the past and still going on</li>example: Iam teaching<br/>We are listening</div>
-                          <li>To denote a planned future act</li>example: My father is coming from the UK tomorrow</div>
-
-                          </ul>
-
-
-
-                </div>
-
-
-
-                        </div>
-                      </div>
-                      </div>
-
-
-
-
-
-
-
-
-                      <!-- presnt perfect -->
-                      <br><br>
-  <h2>Presnt Perfect</h2>
-                                  <div class="col-sm-12">
-                                    <div class="card">
-                                      <div class="card-body">
-
-                                        <div class="form">Subject &nbsp+ &nbsp has/have &nbsp + &nbsp v3</div><br />
-
-
-                                        <table class="table table-bordered">
-                                          <thead>
-
-                                          <tbody>
-                                            <tr>
-                                              <td>He , She , It</td>
-                                              <th>has</th>
-
-                                              </thead>
-                                            </tr>
-                                            <tr>
-                                              <td> We , You , They, I</td>
-                                              <th>have</th>
-                                          </tbody>
-                                        </table>
-
-
-
-
-
-
-
-
-                                        <h5>Uses</h5>
-                                        <ul>
-                                          <li> To denote an action that has just completed</li>
-                                          <div id="example" class="hide">We have studied the stative words<br />He has taken a chair</div>
-
-                                        </ul>
-
-
-
-
-                                        <a href="/multiplication.html" class="btn btn-dark">Read More ...</a>
-                                      </div>
-                                    </div>
-                                  </div>
-
-
-
-
-
-
-
-  <!-- present perfect continuous -->
-
-
-    <h2>Present Perfect continuous</h2>
-              <div class="col-sm-12">
-                <div class="card">
-                  <div class="card-body">
-
-
-
-                    <h4 onclick="simplepresent()">Present Perfect continuous</h4>
-                    <div class="form">Subject &nbsp+ &nbsp has/have &nbsp + been + &nbsp v+ing</div><br />
-
-
-                    <table class="table table-bordered">
-                      <thead>
-
-                      <tbody>
-                        <tr>
-                          <td>He , She , It , Name</td>
-                        <th>has</th>
-
-                        </thead>
-                      </tr>
-                      <tr>
-                        <td> We , You , They, I</td>
-                        <th>have</th>
-                    </tbody>
-                  </table>
-
-
-
-
-
-
-
-
-                  <h5>Uses</h5>
-                  <ul>
-                    <li> To denote an action that started in past and still going on.The only difference b/w present continuous and presenr perfect continuous is in a use of time with ' since and for ' <br />(time mention ചെയണം)</li>
-                    <div id="example" class="hide">We are studying grammar --present continuous<br />
-                      <h7> we have been studying grammar since 9:30 am <br /> we have been studying grammar for one hour. --present perfect continuous</h7>
-                    </div>
-
-                  </ul>
-
-                  <a href="/multiplication.html" class="btn btn-dark">Read More ...</a>
-                </div>
-              </div>
-            </div>
-
-
-
-
-<!-- past tense starts  -->
-
-
-<br><br><br>
-<h1 class="whichtense">Past Tense</h1>
-<br> <br>
-
-   <!-- simple past -->
-<h2>Simple past</h2>
-<div class="col-sm-12">
-  <div class="card">
-    <div class="card-body">
-
-<div id="presentperfect">
-      <div class="container table-responsive">
-
-      <b>  <div class="form">Subject &nbsp+ &nbsp      &nbsp  v2</div></b>
-      <br />
-
-  <p>eg: we studied grammar</p>
-
-
- <h5>Tense use to denote Completed action</h5>
-
-<div class="container table-responsive">
-
-        <table class="table table-bordered tbl2">
-        <thead>
-      <h6>word which often simple past</h6>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Yesterday</td>
-            <td>last day</td>
-            <td>last day</td>
-
-          </tr>
-          <tr>
-            <td>Previous month</td>
-            <td>previous day</td>
-            <td>ago</td>
-          </tr>
-          <tr>
-              <td>(in/on year)</td>
-              <td></td>
-          </tr>
-            </tbody>
-        </table>
-    </div>
-    &nbsp<strong> example</strong><h7><br/>She visited me yesterday<br>We met two years ago<br>
-    </h7><br />
-     <div class="well well-lg" >
-
-
-     <h5>if a part of sentence is <i>Present</i> the following part becomes present.If a part of sentence is past the following part should be also past</h5>
-     <label>example</label>
-     <p>she says that she is innocent</p>
-    <p>she said that she was innocent</p>
-<label>note : it is time,it is hightime,since ,as if,although :- use simple past after these </label>
-<p> I wish , I know her name</p>
-<p>She behaves asif she lived here</p>
-<p>She calls me since she left home</p>
-<label>if "since" come it is past</label>
-<p><label>note: had better,would rather,would sooner,but --use v1</label></p>
-<p>eg: You had better see a doctor</p>
-     </div>
-     </div>
-     </div>
-
-</div>
-</div >
-
-</div>
-
-
-<!-- past continous -->
-<br><br>
-<h2>Past Continuous</h2>
-<div class="col-sm-12">
-  <div class="card">
-    <div class="card-body">
-      <div id="presentperfect">
-     <div class="container table-responsive">
-
-     <div class="well well-lg" id="space">
-         <div class="form">Subject &nbsp+ &nbsp     was/were &nbsp +  &nbsp  v+ing</div><br />
-
-
-         <table class="table table-bordered">
-       <thead>
-
-       <tbody>
-         <tr>
-           <td>I,He , She , It</td>
-           <th>was</th>
-
-           </thead>
-         </tr>
-         <tr>
-           <td> We , You , They, </td>
-           <th>were</th>
-       </tbody>
-       </table>
-         <h5>Use</h5>
-         <ul>
-         <li> To denote an action that was continuing when another action took place</li><div id="example" >eg: We were shouting when teacher came to the class yesterday</div>
-
-         </ul>
-   <h6>I was sleeping when i heared the news his fathers death</h6>
-
-
-</div>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-<!-- past perfect -->
-<br><br>
-<h2>Past perfect</h2>
-<div class="col-sm-12">
-  <div class="card">
-    <div class="card-body">
-     <div id="pastperfect">
-     <div class="container table-responsive">
-
-     <div class="well well-lg" id="space">
-         <div class="form">Subject &nbsp+ &nbsp     had be &nbsp +  &nbsp  v3</div><br />
-
-
-
-
-
-
-
-         <h5>Use</h5>
-         <ul>
-         <li> To denote an action That had completed in before another action took place. </li>
-<li>Past perfect is used with the First Tee completed action. </li>
-<label>eg:</label><p>
- 1)  The sun hard risen before I wake up.
 </p>
-
-         </ul>
-
-<label><p>The only tense that is used with the past perfect is simple past. </p></label>
-
-<p><b>eg :</b>1) She had left before I reached  home yesterday. </p>
-<p>2) The patient had died before the doctor arrived. </p>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 
 
 
-<!-- past perfect continous -->
-<br><br>
-<h2>Past Perfect Continuous</h2>
-<div class="col-sm-12">
-  <div class="card">
-    <div class="card-body">
 
-      <div id="presentperfect">
-            <div class="container table-responsive">
 
-            <div class="well well-lg" id="space">
-                <div class="form">Subject &nbsp+ &nbsp     had been&nbsp +  &nbsp  v+ing</div><br />
+<br /><br />
 
 
 
 
 
+<h2 style="color:#ff585d;font-size:2.6rem;">Gallery</h2>
+<div class="photos">
+    
+    
+
+ <div class="row">
+ 
+ <div id="img1"class="col-6 col-md-4 hide "><img src="https://scontent.fcok1-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/41702468_2180564695565827_1672292516524720128_o.jpg?_nc_cat=104&efg=eyJpIjoidCJ9&_nc_oc=AQks2UE4yAlLBJQ6CU7hzENAFWlhlG-AINtkaYzSDluR6zjPDthfHjVPlgCsvLvBVQo&_nc_ht=scontent.fcok1-1.fna&oh=0c5cb3e14bc039ecaaf2b8003a98f923&oe=5E1E212F" class="img-thumbnail"></div>
+   <div id="img2" class="col-6 col-md-4 hide "><img src="https://scontent.fcok1-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/41694429_2180564462232517_6199110170161709056_o.jpg?_nc_cat=105&efg=eyJpIjoidCJ9&_nc_oc=AQne-IfilxsFPfuf8NEHTfcfNV8y55VgKGGlKF6LLk3BrClmpZW_qLMetS5NO6iSp_Q&_nc_ht=scontent.fcok1-1.fna&oh=550fdab7c0031514a9280a9209876d30&oe=5E17F612" class="img-thumbnail"></div>
+   </div>
+   
+  <div class="row"> 
+ 
+  
+   <div id="img3" class="col-12 col-md-12 hide ">  <img src="https://scontent.fcok1-1.fna.fbcdn.net/v/t31.0-8/fr/cp0/e15/q65/28238296_2036484326640532_1864544508893627574_o.jpg?_nc_cat=108&efg=eyJpIjoidCJ9&_nc_oc=AQlnq8jQmuI6jxYSN1qBJwQthzjOH0lE8LDyBzcCzzT4DaLGyQvAuSZNC_xOUeovzOE&_nc_ht=scontent.fcok1-1.fna&oh=5e10580b7c4e089d35c706daed6b946b&oe=5E1E410A" class="img-thumbnail"></div>
+   
+    </div> 
 
 
-                <h5>Use</h5>
-                <ul>
-                <li> To denote an action that has continuing when another action took place. </li>
-      <h5>Difference between past continuous and past perfect Continuous,
+    
+    
+    
+    
+</div>
+<button class="btn btn-primary cent">View More</button>
+    
 
-      In past perfect Continuous Time should be mentioned. </h5>
-      <label>eg:</label><p>
-      We had been shouting for two hours when the teacher entered into the class.
-      </p>
 
-       <p>
-       I had been playing football for four hours When I got the appointment letter.
-       </p>
-                </ul>
-      </div>
+
+
+
+<div id="container" class="container-fluid">
+
+
+
+
+<div class="package">
+
+<div class="row"> 
+<div class="col-12 col-sm-6 ath">
+
+   <div class="card" style="width: 100%;"> <div class="card-header premium"> Premium  ₹55,000 onwards</div> <ul class="list-group list-group-flush"> <li class="list-group-item ">3 Cameras <span class="tick">√</span>  </li> <li class="list-group-item">include steady and drone <span class="tick">√</span></li> <li class="list-group-item">included 5 minute Promo video <span class="tick">√</span></li> 
+ <li class="list-group-item">Professional Album<span class="tick">√</span></li>
+ <li class="list-group-item">3 cameraman + 2 lightboys <span class="tick">√</span></li>    
+   </ul> 
+   <a href="#" class="btn btn-dark">Select this</a> 
+   </div>
+ 
+</div> 
+
+<div class="col-12 col-sm-6 ath">
+<div class="card" style="width: 100%;"> <div class="card-header classic"> Classic </div> <ul class="list-group list-group-flush"> <li class="list-group-item">Cras justo odio</li> <li class="list-group-item">Dapibus ac facilisis in</li> <li class="list-group-item">Vestibulum at eros</li> </ul> 
+<a href="#" class="btn btn-outline-dark">Select this</a>
+</div>
+
+
+</div> 
+
 
 
 </div>
-</div>
-</div>
-</div>
-</div>
 
 
-<!-- future tense strts -->
-<br> <br>
-<h1 class="whichtense">Future tense</h1>
-
-<!-- simple future -->
-<br> <br>
-
-<h2>Simple future</h2>
-<div class="col-sm-12">
-  <div class="card">
-    <div class="card-body">
-
-            <div id="simplefuture">
-            <div class="container table-responsive">
-
-            <div class="well well-lg" id="space">
-                <div class="form">Subject &nbsp+ &nbsp     will/shall &nbsp +  &nbsp  v</div><br />
-
-                </div>
-
-
-
-                <h5>Use</h5>
-                <ul>
-                <li> To denote a future action </li>
-
-         <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <td>I ,We </td>
-                  <th>Shall</th>
-
-                </tr>
-
-              <tbody>
-                <tr>
-                  <td>I ,We ,He , She , They</td>
-                  <th>Will</th>
-
-                  </thead>
-                </tr>
-              </tbody>
-              </table>
-
-      <label>eg: He will fly to America tomorrow.</label>
-
-      <h4>Conditions</h4>
-      <p>
-      There are conditional Clauses in English. They are probable condition, improved condition and impossible condition.
-      </p>
-      <h5>Propable condition</h5>
-      <p>In a probable condition the condition clause in Simple present and the following sentence becomes
-      will + v1(or may+ v1 ,shall + v1 +could + v1) </p>
-      <label>eg: If you study you will pass</label>
-      <label>I will help her,if she asks for</label>
-
-      <h5>Impropable Condition</h5>
-      <p>In an improbable condition,The conditional Clause is in simple past and the following sentence becomes.
-      would+ v1(might + v1, should + v1 ,could + v1)</p>
-      <label>eg : If you studied, you would pass. </label>
-      <label>eg: I would help her, if she asked for. </label>
-      <h5>Impossible Condition</h5>
-      <p>In an impossible condition the conditional Clause becomes past perfect and the following sentence should be would have + v3 (might/could/should have + v3)</p>
-      <label><p>eg: If you had studied you would have passed.</p> </label>
-      <label><p>If she had worked she would have succeed. </p></label>
-      <label><p>If I had a brother I would play with him. </p></label>
-      </div>
-      </div>
-
-
-</div>
-</div>
 </div>
 
 
@@ -955,162 +364,6 @@
 
 
 
-<!-- future contnuous -->
-<br> <br>
-<h2>Future Continuous</h2>
-<div class="col-sm-12">
-  <div class="card">
-    <div class="card-body">
-      <div id="futurecontinuous">
-      <div class="container table-responsive">
-
-      <div class="well well-lg" id="space">
-          <div class="form">Subject &nbsp+ &nbsp     will/shall be &nbsp +  &nbsp  v + ing</div><br />
-
-
-
-
-
-
-
-          <h5>Use</h5>
-          <ul>
-          <li> To denote an action that will be progressing in future</li>
-
-<label>eg:</label><p>
-  1)  I will be travelling at this time tommorow
-</p>
-
- <p>2) I will be working in a bank at this time  next year</p>
-
-          </ul>
-
-
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-<!-- futurer perfect -->
-<br><br>
-<h2>Future Perfect </h2>
-<div class="col-sm-12">
-  <div class="card">
-    <div class="card-body">
-      <div id="futureperfect">
-      <div class="container table-responsive">
-
-      <div class="well well-lg" id="space">
-          <div class="form">Subject &nbsp+ &nbsp     will/shall  &nbsp + have   &nbsp  + v3</div><br />
-
-   <h5>use</h5>
-   <h6>To denote an action that  will have completed at a particular time in future. </h6>
-
-      <label><p>eg : 1) I will have killed you by the end of this day.  </p></label>
-
-          <label><p>2) She will have submitted her project by the end of this week. </p></label>
-
-
-
-
-
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-<!-- future perfect continous -->
-<br> <br>
-<h2>Future Perfect Continuous</h2>
-<div class="col-sm-12">
-  <div class="card">
-    <div class="card-body">
-
-      <div id="futureperfectcontinuous">
-      <div class="container table-responsive">
-
-      <div class="well well-lg" id="space">
-          <div class="form">Subject &nbsp+ &nbsp     will/shall  &nbsp + have been  &nbsp  + v +ing</div><br />
-
-
-
-      <label><p>eg : She will have been working here for 20 years by the end of this week. </p></label>
-
-
-
-
-
-
-</div>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-
-
-                <!-- closing of post , tennse dexription is above -->
-              </div>
-
-
-
-
-
-
-                    <div class="sidebar col-md-2 bg-light mb-3">
-                      <div class="card-body ">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- closing of gutter class or tenses -->
-            </div>
-            <!-- closing of tenses section -->
-          </div>
-
-
-
-
-
-
-
-
-
-<!-- SECTION CLOSe -->
-</div>
-
-
-
-
-    </div>
-</body>
-
+ </div>       
+    </body>
 </html>
